@@ -1,0 +1,5 @@
+# Netbeans project and build artifacts directories
+build/
+dist/
+nbproject/
+nbproject/private/
