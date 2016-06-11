@@ -23,7 +23,7 @@ public class PantallaInicial extends javax.swing.JFrame {
     public PantallaInicial(Sistema sistema) {
         initComponents();
         this.sistema = sistema;
-        JPPrincipal.setVisible(false);
+ 
     }
 
     /**
@@ -35,17 +35,8 @@ public class PantallaInicial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        JPInicioSesion = new javax.swing.JPanel();
-        lblInfo = new javax.swing.JLabel();
-        lblNombreUsuario = new javax.swing.JLabel();
-        txtNombreUsuario = new javax.swing.JTextField();
-        btnIniciarSesion = new javax.swing.JButton();
-        btnRegistrarse = new javax.swing.JButton();
-        JPPrincipal = new javax.swing.JPanel();
-        btnIngresarGastoFijo = new javax.swing.JButton();
-        btnIngresarProducto = new javax.swing.JButton();
-        btnIngresarCompra = new javax.swing.JButton();
-        btnIndicarUsoProducto = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú Principal - Sistema de Gestión de gastos del hogar");
@@ -58,166 +49,41 @@ public class PantallaInicial extends javax.swing.JFrame {
             }
         });
 
-        JPInicioSesion.setBorder(javax.swing.BorderFactory.createTitledBorder("Iniciar sesión"));
+        jPanel1.setLayout(new java.awt.CardLayout());
 
-        lblInfo.setText("Inicia sesión para comenzar a utilizar el sistema");
-
-        lblNombreUsuario.setText("Nombre de usuario");
-
-        btnIniciarSesion.setText("Iniciar Sesión");
-        btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIniciarSesionActionPerformed(evt);
-            }
-        });
-
-        btnRegistrarse.setText("Registrarme");
-        btnRegistrarse.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistrarseActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout JPInicioSesionLayout = new javax.swing.GroupLayout(JPInicioSesion);
-        JPInicioSesion.setLayout(JPInicioSesionLayout);
-        JPInicioSesionLayout.setHorizontalGroup(
-            JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JPInicioSesionLayout.createSequentialGroup()
-                .addGroup(JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(JPInicioSesionLayout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(lblInfo))
-                    .addGroup(JPInicioSesionLayout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(lblNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnRegistrarse, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnIniciarSesion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)))))
-                .addContainerGap(63, Short.MAX_VALUE))
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 656, Short.MAX_VALUE)
         );
-        JPInicioSesionLayout.setVerticalGroup(
-            JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JPInicioSesionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblInfo)
-                .addGap(39, 39, 39)
-                .addGroup(JPInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblNombreUsuario)
-                    .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
-                .addComponent(btnIniciarSesion)
-                .addGap(18, 18, 18)
-                .addComponent(btnRegistrarse)
-                .addContainerGap(31, Short.MAX_VALUE))
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 403, Short.MAX_VALUE)
         );
 
-        JPPrincipal.setBorder(javax.swing.BorderFactory.createTitledBorder("Menú principal"));
-
-        btnIngresarGastoFijo.setText("Ingresar Gasto Fijo");
-        btnIngresarGastoFijo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarGastoFijoActionPerformed(evt);
-            }
-        });
-
-        btnIngresarProducto.setText("Ingresar Producto");
-
-        btnIngresarCompra.setText("Ingresar Compra Diaria");
-
-        btnIndicarUsoProducto.setText("Indicar Uso de Producto");
-
-        javax.swing.GroupLayout JPPrincipalLayout = new javax.swing.GroupLayout(JPPrincipal);
-        JPPrincipal.setLayout(JPPrincipalLayout);
-        JPPrincipalLayout.setHorizontalGroup(
-            JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JPPrincipalLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIngresarGastoFijo)
-                    .addComponent(btnIngresarProducto))
-                .addGap(49, 49, 49)
-                .addGroup(JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnIndicarUsoProducto)
-                    .addComponent(btnIngresarCompra))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        JPPrincipalLayout.setVerticalGroup(
-            JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(JPPrincipalLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarGastoFijo)
-                    .addComponent(btnIngresarCompra))
-                .addGap(18, 18, 18)
-                .addGroup(JPPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIngresarProducto)
-                    .addComponent(btnIndicarUsoProducto))
-                .addContainerGap(25, Short.MAX_VALUE))
-        );
+        jPanel1.add(jPanel3, "card2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(108, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(JPInicioSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(JPPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(103, 103, 103))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(JPInicioSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
-                .addComponent(JPPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(121, 121, 121))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
-        // TODO add your handling code here:
-        try{
-            String alias = this.txtNombreUsuario.getText();
-
-            if (sistema.getListaAlias().contains(alias)) {
-                //oculto panel de login para mostrar las opciones
-                JPInicioSesion.setVisible(false);
-                JPPrincipal.setVisible(true);
-            }else{
-                this.lblInfo.setText("Nombre de usuario incorrecto, intenta con uno válido.");
-            }
-        }catch(Exception e){
-            this.lblInfo.setText(e.toString());
-        }
-    }//GEN-LAST:event_btnIniciarSesionActionPerformed
-
-    private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
-        // TODO add your handling code here:
-        AltaUsuario iAU = new AltaUsuario(sistema);
-        iAU.setLocationRelativeTo(null);
-        iAU.setVisible(true);
-       
-    }//GEN-LAST:event_btnRegistrarseActionPerformed
-
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         //Serializar todos los arraylist al cerrar la app
          sistema.guardar();
     }//GEN-LAST:event_formWindowClosing
-
-    private void btnIngresarGastoFijoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarGastoFijoActionPerformed
-        // TODO add your handling code here:
-        AltaGastoFijo iAGF = new AltaGastoFijo(sistema);
-        iAGF.setLocationRelativeTo(null);
-        iAGF.setVisible(true);
-    }//GEN-LAST:event_btnIngresarGastoFijoActionPerformed
 
    
     
@@ -260,15 +126,18 @@ public class PantallaInicial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPInicioSesion;
-    private javax.swing.JPanel JPPrincipal;
-    private javax.swing.JButton btnIndicarUsoProducto;
-    private javax.swing.JButton btnIngresarCompra;
-    private javax.swing.JButton btnIngresarGastoFijo;
-    private javax.swing.JButton btnIngresarProducto;
+    private javax.swing.JPanel JPInicioSesion1;
     private javax.swing.JButton btnIniciarSesion;
+    private javax.swing.JButton btnIniciarSesion1;
     private javax.swing.JButton btnRegistrarse;
+    private javax.swing.JButton btnRegistrarse1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblInfo;
+    private javax.swing.JLabel lblInfo1;
     private javax.swing.JLabel lblNombreUsuario;
+    private javax.swing.JLabel lblNombreUsuario1;
     private javax.swing.JTextField txtNombreUsuario;
+    private javax.swing.JTextField txtNombreUsuario1;
     // End of variables declaration//GEN-END:variables
 }
